@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: GesCRA
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gescra
+    username: postgres
+    password: passer123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+security:
+  jwt:
+    secret-key: VGhpc0lzQVNpbXBsZVNlY3JldEtleUZvckdlc0NSQUpXVEFwcA==
+    expiration: 86400000
